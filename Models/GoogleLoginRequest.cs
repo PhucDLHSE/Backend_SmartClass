@@ -1,4 +1,4 @@
-namespace DotnetGoogleOAuth2.Models
+namespace SmartClass.Backend.Models
 {
     public class GoogleLoginRequest
     {

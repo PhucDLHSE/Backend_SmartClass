@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using DotnetGoogleOAuth2.Models;
+using SmartClass.Backend.Models;
 
-namespace DotnetGoogleOAuth2.Data
+namespace SmartClass.Backend.Data
 {
     public class AppDbContext : DbContext
     {

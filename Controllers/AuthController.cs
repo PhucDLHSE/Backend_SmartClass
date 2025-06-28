@@ -1,12 +1,12 @@
 using Google.Apis.Auth;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using DotnetGoogleOAuth2.Data;
-using DotnetGoogleOAuth2.Models;
-using DotnetGoogleOAuth2.Services;
+using SmartClass.Backend.Data;
+using SmartClass.Backend.Models;
+using SmartClass.Backend.Services;
 
 
-namespace DotnetGoogleOAuth2.Controllers
+namespace SmartClass.Backend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

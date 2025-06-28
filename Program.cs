@@ -2,15 +2,17 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.EntityFrameworkCore;
 using DotNetEnv;
-using DotnetGoogleOAuth2.Services;
+using SmartClass.Backend.Services;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using DotnetGoogleOAuth2.Data;
+using SmartClass.Backend.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Load cấu hình từ .env
 Env.Load();
+builder.Configuration.AddEnvironmentVariables();
+Console.WriteLine($"GOOGLE_AUDIENCE = {Environment.GetEnvironmentVariable("GOOGLE_AUDIENCE")}");
 
 string googleClientId = Environment.GetEnvironmentVariable("GOOGLE_CLIENT_ID")
     ?? throw new InvalidOperationException("GOOGLE_CLIENT_ID is not set.");

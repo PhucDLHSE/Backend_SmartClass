@@ -1,4 +1,4 @@
-namespace DotnetGoogleOAuth2.Services
+namespace SmartClass.Backend.Services
 {
     public interface IRoleResolver
     {
